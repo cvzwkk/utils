@@ -515,7 +515,7 @@ with app.app_context():
 from pyngrok import ngrok
 
 # Set your ngrok auth token (get free from ngrok.com)
-ngrok.set_auth_token("37fJKKexs66q3bWBAAelBYiU2Yp_7Fq6yLN25TUj43fiBHfEN")
+ngrok.set_auth_token("YOUR NGROK TOKEN")
 
 public_url = ngrok.connect(5000)
 print(f"✅ Public URL: {public_url}")

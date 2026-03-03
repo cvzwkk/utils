@@ -1,3 +1,5 @@
+# ATTENTION NOT WORKING PROPERLY! NEEDS BE FIXED, USE IT AS SAMPLE BASE
+
 !pip install -q cryptography opencv-python-headless numpy pillow reedsolo
 
 import os, hashlib, base64, zlib

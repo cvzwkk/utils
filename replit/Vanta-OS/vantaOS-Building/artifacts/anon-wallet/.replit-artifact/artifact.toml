@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Anon Wallet"
+version = "1.0.0"
+id = "artifacts/anon-wallet"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24658
+
+[services.development]
+run = "pnpm --filter @workspace/anon-wallet run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/anon-wallet", "run", "build" ]
+publicDir = "artifacts/anon-wallet/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24658"
+BASE_PATH = "/"

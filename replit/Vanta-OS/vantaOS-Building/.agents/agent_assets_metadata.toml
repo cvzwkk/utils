@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "nHJkHh_7pz_Hz3gDSBHSP"
+uri = "file://exports/vanta-source.zip"
+type = "unspecified"
+title = "Vanta — Full Source Code"

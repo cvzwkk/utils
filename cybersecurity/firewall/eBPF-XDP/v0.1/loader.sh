@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# apt-get install -y libbpf-devel linux-headers clang llvm
 # Configuration
 INTERFACE="wlan0"
 BPF_OBJ="firewall.bpf.o"
